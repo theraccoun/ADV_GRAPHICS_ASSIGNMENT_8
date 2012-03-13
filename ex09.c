@@ -75,10 +75,10 @@ static void Cube(void)
    //  top
    glBegin(GL_QUADS);
    glNormal3f( 0,+1, 0);
-   glTexCoord3f(-D,+D,+D); glVertex3f(+D,+D,+D);
-   glTexCoord3f(+D,+D,+D); glVertex3f(-D,+D,+D);
-   glTexCoord3f(+D,+D,-D); glVertex3f(-D,+D,-D);
-   glTexCoord3f(-D,+D,-D); glVertex3f(+D,+D,-D);
+   glTexCoord3f(-D,+D,+D); glVertex3f(-D,+D,-D);
+   glTexCoord3f(+D,+D,+D); glVertex3f(+D,+D,-D);
+   glTexCoord3f(+D,+D,-D); glVertex3f(+D,+D,+D);
+   glTexCoord3f(-D,+D,-D); glVertex3f(-D,+D,+D);
    glEnd();
    //  Bottom
    glBegin(GL_QUADS);
