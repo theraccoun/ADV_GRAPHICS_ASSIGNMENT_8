@@ -43,42 +43,42 @@ static void Cube(void)
    //  Front
    glBegin(GL_QUADS);
    glNormal3f( 0, 0,+1);
-   glTexCoord3f(-D,-D,+D); glVertex3f(-D,-D,+D);
-   glTexCoord3f(+D,-D,+D); glVertex3f(+D,-D,+D);
-   glTexCoord3f(+D,+D,+D); glVertex3f(+D,+D,+D);
-   glTexCoord3f(-D,+D,+D); glVertex3f(-D,+D,+D);
+   glTexCoord3f(-D,-D,+D); glVertex3f(-D,+D,+D);
+   glTexCoord3f(+D,-D,+D); glVertex3f(+D,+D,+D);
+   glTexCoord3f(+D,+D,+D); glVertex3f(+D,-D,+D);
+   glTexCoord3f(-D,+D,+D); glVertex3f(-D,-D,+D);
    glEnd();
    //  Back
    glBegin(GL_QUADS);
    glNormal3f( 0, 0,-1);
-   glTexCoord3f(+D,-D,-D); glVertex3f(+D,-D,-D);
-   glTexCoord3f(-D,-D,-D); glVertex3f(-D,-D,-D);
-   glTexCoord3f(-D,+D,-D); glVertex3f(-D,+D,-D);
-   glTexCoord3f(+D,+D,-D); glVertex3f(+D,+D,-D);
+   glTexCoord3f(+D,-D,-D); glVertex3f(+D,+D,-D);
+   glTexCoord3f(-D,-D,-D); glVertex3f(-D,+D,-D);
+   glTexCoord3f(-D,+D,-D); glVertex3f(-D,-D,-D);
+   glTexCoord3f(+D,+D,-D); glVertex3f(+D,-D,-D);
    glEnd();
    //  Right
    glBegin(GL_QUADS);
    glNormal3f(+1, 0, 0);
-   glTexCoord3f(+D,-D,+D); glVertex3f(+D,-D,+D);
-   glTexCoord3f(+D,-D,-D); glVertex3f(+D,-D,-D);
-   glTexCoord3f(+D,+D,-D); glVertex3f(+D,+D,-D);
-   glTexCoord3f(+D,+D,+D); glVertex3f(+D,+D,+D);
+   glTexCoord3f(+D,-D,+D); glVertex3f(+D,+D,+D);
+   glTexCoord3f(+D,-D,-D); glVertex3f(+D,+D,-D);
+   glTexCoord3f(+D,+D,-D); glVertex3f(+D,-D,-D);
+   glTexCoord3f(+D,+D,+D); glVertex3f(+D,-D,+D);
    glEnd();
    //  Left
    glBegin(GL_QUADS);
    glNormal3f(-1, 0, 0);
-   glTexCoord3f(-D,-D,-D); glVertex3f(-D,-D,-D);
-   glTexCoord3f(-D,-D,+D); glVertex3f(-D,-D,+D);
-   glTexCoord3f(-D,+D,+D); glVertex3f(-D,+D,+D);
-   glTexCoord3f(-D,+D,-D); glVertex3f(-D,+D,-D);
+   glTexCoord3f(-D,-D,-D); glVertex3f(-D,+D,-D);
+   glTexCoord3f(-D,-D,+D); glVertex3f(-D,+D,+D);
+   glTexCoord3f(-D,+D,+D); glVertex3f(-D,-D,+D);
+   glTexCoord3f(-D,+D,-D); glVertex3f(-D,-D,-D);
    glEnd();
    //  top
    glBegin(GL_QUADS);
    glNormal3f( 0,+1, 0);
-   glTexCoord3f(-D,+D,+D); glVertex3f(-D,+D,+D);
-   glTexCoord3f(+D,+D,+D); glVertex3f(+D,+D,+D);
-   glTexCoord3f(+D,+D,-D); glVertex3f(+D,+D,-D);
-   glTexCoord3f(-D,+D,-D); glVertex3f(-D,+D,-D);
+   glTexCoord3f(-D,+D,+D); glVertex3f(+D,+D,+D);
+   glTexCoord3f(+D,+D,+D); glVertex3f(-D,+D,+D);
+   glTexCoord3f(+D,+D,-D); glVertex3f(-D,+D,-D);
+   glTexCoord3f(-D,+D,-D); glVertex3f(+D,+D,-D);
    glEnd();
    //  Bottom
    glBegin(GL_QUADS);
