@@ -31,12 +31,11 @@ int right;        // Right Texture
 int shader[MODE] = {0,0,0,0,0}; //  Shader programs
 char* text[] = {"No Shader","Vertex Blinn","Vertex Phong","Pixel Blinn","Pixel Phong"};
 
-const int D = 200;
 
 /*
  *  Draw a cube
  */
-static void Cube(void)
+static void Cube(int D)
 {
    glEnable(GL_TEXTURE_CUBE_MAP);
      glBindTexture(GL_TEXTURE_CUBE_MAP,cubeMap);
@@ -131,7 +130,11 @@ void display()
    //
    //  Select shader (0 => no shader)
    glUseProgram(shader[mode]);
-   Cube();
+   glDisable(GL_DEPTH_TEST);
+   Cube(50);
+
+   glEnable(GL_DEPTH_TEST);
+   Cube(1);
 
 
    glPopAttrib();
