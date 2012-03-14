@@ -27,7 +27,7 @@ extern "C" {
 void         Print(const char* format , ...);
 void         Fatal(const char* format , ...);
 unsigned int LoadTexBMP(const char* file);
-unsigned int LoadCubeMap(const char* file[]);
+unsigned int LoadCubeMap(const char* file[], int isReflect);
 void         Project(double fov,double asp,double dim);
 void         ErrCheck(const char* where);
 int          LoadOBJ(const char* file);
