@@ -14,8 +14,8 @@
 #define SHADER_PATH "./shaders/"
 #define SKYBOX_VS SHADER_PATH"SkyBox.vsh"
 #define SKYBOX_FS SHADER_PATH"SkyBox.fsh"
-#define REFLECTION_VS SHADER_PATH"Reflection.vsh"
-#define REFLECTION_FS SHADER_PATH"Reflection.fsh"
+#define REFLECTION_VS SHADER_PATH"reflection.vert"
+#define REFLECTION_FS SHADER_PATH"reflection.frag"
 
 
 using std::cout;
@@ -34,6 +34,7 @@ float ph = 0.0;
 float dim = 80.0;
 int model = 0;
 int isZoom = 0;
+int isReflect = 1;
 
 int curCubePath = 0;
 
@@ -347,6 +348,9 @@ void key(unsigned char ch,int x,int y)
             dim = 100;
             cout << dim;
         }
+    }
+    else if(ch == 'r'){
+        isReflect = (isReflect + 1)%2;
     }
 
     //  Tell GLUT it is necessary to redisplay the scene
